@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: jenkins-demo
+  name: jenkins
   namespace: default
 spec:
   selector:
@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: jenkins-demo
+        app: jenkins
     spec:
       containers:
       - image: 903226639/jenkins-demo:<BUILD_TAG>
